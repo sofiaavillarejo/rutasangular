@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="title">Numero Doble - Parámetros</h1>
+  
+  <div class="buttons-container">
+    <button class="btn" (click)="goToHome()">Volver al menú</button>
+    <button class="btn" (click)="redirect(88)">Doble 88</button>
+    <button class="btn" (click)="redirect(100)">Doble 100</button>
+    <button class="btn" (click)="redirect(5)">Doble 5</button>
+  </div>
+
+  <div *ngIf="numero" class="result">
+    <h2 class="result-text">El doble de {{numero}} es {{doble}}</h2>
+  </div>
+  
+  <div *ngIf="!numero" class="no-result">
+    <h2 class="no-result-text">No hemos recibido parámetro</h2>
+  </div>
+</div>

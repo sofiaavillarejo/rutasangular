@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="navbar">
+    <ul id="menu">
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li *ngFor="let num of numeros"><a [routerLink]="['/tablamultiplicar', num]">Tabla multiplicar de {{num}}</a></li>
+    </ul>
+  </div>
+</div>
